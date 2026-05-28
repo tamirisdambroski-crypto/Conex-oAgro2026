@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026: Agro Forte, Futuro Sustentável</title>
+    
+    <!-- Fontes Modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ==========================================
+           1. CORES VIBRANTES E DESIGN (NÍVEL AGRINHO)
+           ========================================== */
+        :root {
+            --primary-green: #2e7d32;
+            --dark-green: #1b5e20;
+            --light-green: #4caf50;
+            --vibrant-yellow: #ffeb3b;
+            --accent-orange: #ff9800;
+            --earth-brown: #795548;
+            --soft-bg: #f4f9f4;
+            --white: #ffffff;
+            --text-dark: #212121;
+            --text-light: #555555;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--soft-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* ==========================================
+           2. CABEÇALHO HERO (IMPACTANTE)
+           ========================================== */
+        header {
+            background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 50%, var(--light-green) 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 8px solid var(--vibrant-yellow);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 235, 59, 0.15);
+            border-radius: 50%;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .agrinho-badge {
+            background-color: var(--vibrant-yellow);
+            color: var(--dark-green);
+            display: inline-block;
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.2rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #e8f5e9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ==========================================
+           3. CONTEÚDO PRINCIPAL & CARDS
+           ========================================== */
+        main {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .intro-section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.05);
+            margin-bottom: 40px;
+            border-left: 10px solid var(--primary-green);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-green);
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2 i {
+            color: var(--accent-orange);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 6px solid var(--primary-green);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(46, 125, 50, 0.15);
+        }
+
+        .card-img-container {
+            height: 200px;
+            width: 100%;
+            background-color: #e0e0e0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-body h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-green);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        /* ==========================================
+           4. PAINEL DE DADOS ESTATÍSTICOS (2026)
+           ========================================== */
+        .stats-panel {
+            background: linear-gradient(135deg, #efebe9 0%, #d7ccc8 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            border-bottom: 8px solid var(--earth-brown);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .stat-box {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-orange);
+        }
+
+        .stat-box .number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-box .label {
+            font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        /* ==========================================
+           5. QUIZ INTERATIVO TURBO
+           ========================================== */
+        .quiz-section {
+            background: var(--white);
+            padding: 45px;
+            border-radius: 24px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            border: 3px solid var(--light-green);
+            position: relative;
+        }
+
+        .quiz-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 12px;
+            background: linear-gradient(to right, var(--vibrant-yellow), var(--light-green), var(--accent-orange));
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .quiz-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 35px;
+        }
+
+        .quiz-item {
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .quiz-question {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .options-list {
+            list-style: none;
+        }
+
+        .option-label {
+            display: block;
+            background: var(--white);
+            border: 2px solid #e0e0e0;
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 12px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .option-label:hover {
+            background: #edf7ed;
+            border-color: var(--light-green);
+        }
+
+        .option-label input {
+            margin-right: 12px;
+            transform: scale(1.2);
+            accent-color: var(--primary-green);
+        }
+
+        /* Classes de Feedback dinâmico */
+        .option-label.selected-correct {
+            background-color: #c8e6c9 !important;
+            border-color: #388e3c !important;
+            color: #1b5e20;
+        }
+
+        .option-label.selected-wrong {
+            background-color: #ffcdd2 !important;
+            border-color: #d32f2f !important;
+            color: #c62828;
+        }
+
+        .feedback-box {
+            margin-top: 15px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .feedback-box.correct-style {
+            background-color: #e8f5e9;
+            border-left: 6px solid #2e7d32;
+            color: #1b5e20;
+        }
+
+        .feedback-box.wrong-style {
+            background-color: #fff3e0;
+            border-left: 6px solid #ef6c00;
+            color: #e65100;
+        }
+
+        #btn-submit-quiz {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+            color: var(--white);
+            border: none;
+            padding: 18px;
+            font-size: 1.3rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(27, 94, 32, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+
+        #btn-submit-quiz:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(27, 94, 32, 0.4);
+        }
+
+        #quiz-score-result {
+            margin-top: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-align: center;
+            color: var(--dark-green);
+            display: none;
+            padding: 20px;
+            background-color: var(--vibrant-yellow);
+            border-radius: 12px;
+            animation: popIn 0.5s ease;
+        }
+
+        /* ==========================================
+           6. RODAPÉ
+           ========================================== */
+        footer {
+            background-color: #212121;
+            color: #b0bec5;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 6px solid var(--accent-orange);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        footer .highlight-text {
+            color: var(--vibrant-yellow);
+            font-weight: 700;
+        }
+
+        /* Animações Células */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+            .quiz-section { padding: 25px; }
+            h2 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BANNER PRINCIPAL / HEADER -->
+    <header>
+        <div class="container">
+            <div class="agrinho-badge">Concurso Agrinho 2026</div>
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O Equilíbrio Perfeito e Vital entre o Campo e a Cidade</p>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO INTEGRAL -->
+    <main class="container">
+        
+        <!-- INTRODUÇÃO AO TEMA -->
+        <section class="intro-section">
+            <h2><i class="fa-solid fa-seedling"></i> Conectando os Dois Mundos</h2>
+            <p>O tema do Agrinho convida-nos a refletir sobre a interdependência entre o espaço rural e o urbano. O <strong>Agro Forte</strong> não representa apenas recordes de produção, mas sim a aplicação de ciência, inovação e preservação ambiental para alimentar e sustentar as cidades. É no equilíbrio sustentável que garantimos recursos hídricos, proteção do solo e segurança alimentar para as próximas gerações.</p>
+        </section>
+
+        <!-- GRIDS DE CONTEÚDO VISUAL COM IMAGENS REALISTAS -->
+        <section class="grid-cards">
+            
+            <!-- CARD 1: TECNOLOGIA NO CAMPO -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/6075438875692571666" alt="Drone sobrevoando plantação moderna sustentável">
+                </div>
+                <div class="card-body">
+                    <h3>Tecnologia de Precisão</h3>
+                    <p>Drones, Inteligência Artificial e sensores IoT permitem monitorar lavouras em tempo real, economizando até 40% de água e reduzindo a aplicação de insumos químicos.</p>
+                </div>
+            </div>
+
+            <!-- CARD 2: INTEGRAÇÃO SUSTENTÁVEL -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/5291635104902454200" alt="Sistema ILPF com gado, árvores e lavoura integrados">
+                </div>
+                <div class="card-body">
+                    <h3>Sistema ILPF</h3>
+                    <p>A Integração Lavoura-Pecuária-Floresta otimiza o espaço combinando árvores, pasto e plantio numa única área, sequestrando carbono e protegendo a biodiversidade.</p>
+                </div>
+            </div>
+
+            <!-- CARD 3: ALIMENTO NA MESA -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/16577190704701720754" alt="Feira urbana com alimentos frescos e saudáveis vindos do campo">
+                </div>
+                <div class="card-body">
+                    <h3>Da Fazenda à Mesa</h3>
+                    <p>A cidade consome e financia o campo através da inovação, enquanto o produtor rural garante alimentos saudáveis, frescos e seguros na mesa de milhões de famílias urbanas.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PAINEL COM DADOS REAIS E ATUALIZADOS DE 2026 -->
+        <section class="stats-panel">
+            <h2><i class="fa-solid fa-chart-line"></i> O Agro em Números: Panorama Real 2026</h2>
+            <p>Confira os dados estatísticos consolidados mais recentes da safra nacional e dos indicadores de sustentabilidade atuais:</p>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="number">354.8M</span>
+                    <span class="label">Toneladas de Grãos</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number">84.4M</span>
+                    <span class="label">Hectares Cultivados</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number">+1.22%</span>
+                    <span class="label">Crescimento PIB Agro</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number">902K</span>
+                    <span class="label">Tons de Logística Reversa</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DO QUIZ INTERATIVO TURBO (NÍVEL EXCELÊNCIA) -->
+        <section class="quiz-section">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Quiz Interativo Campo & Cidade</h2>
+            <p class="quiz-subtitle">Teste os seus conhecimentos sobre sustentabilidade, agroecologia e a relação rural-urbana. Marque as opções e clique em verificar para ver a explicação técnica!</p>
+
+            <div id="quiz-wrapper">
+                
+                <!-- Pergunta 1 -->
+                <div class="quiz-item" data-question-id="q1" data-correct-answer="b">
+                    <div class="quiz-question">
+                        <span>1.</span>
+                        <span>Qual das seguintes práticas agrícolas de 2026 melhor representa o equilíbrio entre alta produtividade e conservação climática?</span>
+                    </div>
+                    <ul class="options-list">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="a"> A queima controlada da palhada para limpeza rápida do solo antes do plantio.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="b"> O Sistema de Integração Lavoura-Pecuária-Floresta (ILPF) que regenera o solo e sequestra carbono.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="c"> A expansão horizontal irrestrita sobre novas áreas de florestas nativas.
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="feedback-box"></div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="quiz-item" data-question-id="q2" data-correct-answer="c">
+                    <div class="quiz-question">
+                        <span>2.</span>
+                        <span>Como a tecnologia aplicada no "Agro Forte" reduz diretamente os impactos ambientais?</span>
+                    </div>
+                    <ul class="options-list">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="a"> Aumentando o desperdício em canais abertos de irrigação tradicional.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="b"> Eliminando completamente a necessidade de monitoramento humano nas propriedades.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="c"> Usando sensores inteligentes e drones para aplicar água e bioinsumos apenas onde é necessário.
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="feedback-box"></div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="quiz-item" data-question-id="q3" data-correct-answer="a">
+                    <div class="quiz-question">
+                        <span>3.</span>
+                        <span>Qual é a responsabilidade direta dos habitantes da cidade na manutenção do fluxo sustentável com o campo?</span>
+                    </div>
+                    <ul class="options-list">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="a"> Praticar o consumo consciente, evitar o desperdício de alimentos e apoiar a reciclagem e compostagem.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="b"> Consumir em larga escala sem pesquisar a origem ou os selos de sustentabilidade dos produtos.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="c"> Substituir totalmente os produtos naturais por alimentos ultraprocessados industrializados.
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="feedback-box"></div>
+                </div>
+
+            </div>
+
+            <button id="btn-submit-quiz" onclick="processQuizAnswers()">Validar e Verificar Respostas</button>
+            <div id="quiz-score-result"></div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Projeto Agrinho - <span class="highlight-text">Agro Forte, Futuro Sustentável</span></p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">Desenvolvido com fins pedagógicos para a plataforma de partilha de código GitHub.</p>
+        </div>
+    </footer>
+
+    <!-- LOGICA JAVASCRIPT DO QUIZ -->
+    <script>
+        // Banco de dados com justificativas pedagógicas detalhadas para cada alternativa
+        const explanationsData = {
+            q1: {
+                correct: "Excelente! O sistema ILPF combina componentes agrícolas, pecuários e florestais no mesmo espaço, promovendo sinergia ecológica, recuperação de solos degradados e neutralização das emissões de gases estufa.",
+                wrong: "Incorreto. Práticas como queima de solo ou desbravamento desenfreado destroem a biodiversidade e esgotam os nutrientes naturais da terra, afastando-nos da sustentabilidade."
+            },
+            q2: {
+                correct: "Exato! A agricultura de precisão e a tecnologia digital evitam a aplicação excessiva ou o desperdício, aplicando recursos cirurgicamente em cada planta de acordo com a necessidade.",
+                wrong: "Incorreto. A tecnologia aplicada no campo moderno visa justamente mitigar os impactos, economizar recursos finitos e aumentar a eficiência produtiva por hectare."
+            },
+            q3: {
+                correct: "Perfeito! A cadeia produtiva é circular. Quando a cidade reduz o desperdício doméstico e exige produtos rastreáveis e certificados, ela força e apoia o campo a continuar produzindo de forma verde.",
+                wrong: "Incorreto. Ignorar a procedência e desperdiçar comida sobrecarrega desnecessariamente os produtores do campo e os ecossistemas naturais."
+            }
+        };
+
+        function processQuizAnswers() {
+            const quizItems = document.querySelectorAll('.quiz-item');
+            let totalPoints = 0;
+            const totalQuestions = quizItems.length;
+
+            quizItems.forEach((item) => {
+                const questionId = item.getAttribute('data-question-id');
+                const correctAnswer = item.getAttribute('data-correct-answer');
+                const checkedRadio = item.querySelector(`input[name="${questionId}"]:checked`);
+                const feedbackDiv = item.querySelector('.feedback-box');
+                
+                // Resetar estilos anteriores das labels
+                const labels = item.querySelectorAll('.option-label');
+                labels.forEach(l => {
+                    l.classList.remove('selected-correct', 'selected-wrong');
+                });
+
+                // Mostrar o bloco de feedback
+                feedbackDiv.style.display = "block";
+
+                // Caso o usuário não tenha respondido esta pergunta
+                if (!checkedRadio) {
+                    feedbackDiv.className = "feedback-box wrong-style";
+                    feedbackDiv.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> <strong>Atenção:</strong> Por favor, selecione uma resposta para esta questão.";
+                    return;
+                }
+
+                const selectedUserValue = checkedRadio.value;
+                const parentLabel = checkedRadio.parentElement;
+
+                if (selectedUserValue === correctAnswer) {
+                    // Acertou
+                    parentLabel.classList.add('selected-correct');
+                    feedbackDiv.className = "feedback-box correct-style";
+                    feedbackDiv.innerHTML = `<i class='fa-solid fa-circle-check'></i> <strong>Correto!</strong> ${explanationsData[questionId].correct}`;
+                    totalPoints++;
+                } else {
+                    // Errou
+                    parentLabel.classList.add('selected-wrong');
+                    feedbackDiv.className = "feedback-box wrong-style";
+                    feedbackDiv.innerHTML = `<i class='fa-solid fa-circle-xmark'></i> <strong>Incorreto...</strong> ${explanationsData[questionId].wrong}`;
+                }
+            });
+
+            // Exibir a pontuação final de forma destacada
+            const resultDisplay = document.getElementById('quiz-score-result');
+            resultDisplay.style.display = "block";
+            resultDisplay.innerHTML = `<i class="fa-solid fa-trophy"></i> Pontuação Final: Acertou ${totalPoints} de ${totalQuestions} perguntas!`;
+        }
+    </script>
+</body>
+</html>
